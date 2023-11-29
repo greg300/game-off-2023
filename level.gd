@@ -31,14 +31,14 @@ func _physics_process(delta):
 	
 #	background.move_and_slide()
 	
-func scale_platforms(scale):
-	background.scale = scale
+func scale_platforms(newScale):
+	background.scale = newScale
 #	for platform in background.platforms.get_children():
-#		platform.apply_scale(scale)
+#		platform.apply_scale(newScale)
 		
-func scale_player(scale):
+func scale_player(newScale):
 	for platform in background.get_node("Platforms").get_children():
 		if platform.get_node("Area2D").overlaps_body(player):
 			print("Scaling player....")
-			player.scale = scale
+			player.scale = newScale
 			break

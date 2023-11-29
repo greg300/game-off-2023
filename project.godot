@@ -27,6 +27,10 @@ window/stretch/mode="canvas_items"
 
 project/assembly_name="game-off-2023"
 
+[filesystem]
+
+import/blender/enabled=false
+
 [input]
 
 player_left={
