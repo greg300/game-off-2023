@@ -4,8 +4,10 @@ const SPEED = 100.0
 const ACCELERATION = 800.0
 const FRICTION = 2000.0
 const JUMP_VELOCITY = -300.0
+const JUMP_ZOOM_EFFECT = 100.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
+var player_zoom = 1.0
 
 
 func _physics_process(delta):
@@ -25,13 +27,14 @@ func apply_gravity(delta):
 		
 func handle_jump():
 	# Handle Jump.
+	var jump_power = (JUMP_VELOCITY + JUMP_ZOOM_EFFECT * (1 - player_zoom))
 	if is_on_floor():
 		if Input.is_action_just_pressed("player_jump"):
-			velocity.y = JUMP_VELOCITY
+			velocity.y = jump_power
 	else:
 		# Allow player to perform small jumps by releasing JUMP button early.
-		if Input.is_action_just_released("player_jump") and velocity.y < JUMP_VELOCITY / 2:
-			velocity.y = JUMP_VELOCITY / 2
+		if Input.is_action_just_released("player_jump") and velocity.y < jump_power / 2:
+			velocity.y = jump_power / 2
 
 func handle_acceleration(input_axis, delta):
 	# Handle acceleration.

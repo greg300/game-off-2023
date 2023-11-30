@@ -22,12 +22,12 @@ func _physics_process(delta):
 		if background_zoom > BACKGROUND_ZOOM_MIN:
 			background_zoom -= BACKGROUND_ZOOM_INTERVAL
 			scale_platforms(Vector2(background_zoom, background_zoom))
-			scale_player(Vector2(background_zoom, background_zoom))
+			scale_player('d')
 	if Input.is_action_just_pressed("bg_scale_up"):
 		if background_zoom < BACKGROUND_ZOOM_MAX:
 			background_zoom += BACKGROUND_ZOOM_INTERVAL
 			scale_platforms(Vector2(background_zoom, background_zoom))
-			scale_player(Vector2(background_zoom, background_zoom))
+			scale_player('u')
 	
 #	background.move_and_slide()
 	
@@ -36,9 +36,18 @@ func scale_platforms(scale):
 #	for platform in background.platforms.get_children():
 #		platform.apply_scale(scale)
 		
-func scale_player(scale):
+func scale_player(direction):
 	for platform in background.get_node("Platforms").get_children():
 		if platform.get_node("Area2D").overlaps_body(player):
 			print("Scaling player....")
-			player.scale = scale
+			var new_player_zoom = player.player_zoom
+			#if player.player_zoom < background_zoom and direction == 'u':
+			if direction == 'u' and player.player_zoom < BACKGROUND_ZOOM_MAX:
+				new_player_zoom += BACKGROUND_ZOOM_INTERVAL
+			if direction == 'd' and player.player_zoom > BACKGROUND_ZOOM_MIN:
+			#if player.player_zoom > background_zoom and direction == 'd':
+				new_player_zoom -= BACKGROUND_ZOOM_INTERVAL
+			player.scale = Vector2(new_player_zoom, new_player_zoom)
+			player.player_zoom = new_player_zoom
+
 			break
