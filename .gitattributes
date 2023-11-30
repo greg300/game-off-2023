@@ -1,1 +1,4 @@
 * text=auto
+*.gd eol=lf
+*.tscn eol=lf
+*.import eol=lf
