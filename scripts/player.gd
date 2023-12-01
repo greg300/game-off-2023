@@ -5,9 +5,12 @@ const ACCELERATION = 800.0
 const FRICTION = 2000.0
 const JUMP_VELOCITY = -300.0
 const JUMP_ZOOM_EFFECT = 100.0
+const TIME_TO_ZOOM: float = 0.15 # note: this must be identical to Background.TIME_TO_ZOOM
+const BACKGROUND_ZOOM_INTERVAL = 0.1 # note: this must be identical to Level.TIME_TO_ZOOM
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var player_zoom = 1.0
+var target_zoom: float = player_zoom
 var facing_direction: int = 0
 
 
@@ -65,3 +68,12 @@ func face_direction(last_accel: float) -> void:
 	
 	facing_direction = int(facing_left) * -2 + 1
 	$Sprite2D.flip_h = facing_left
+
+# func _process(delta: float) -> void:
+# 	if player_zoom != target_zoom:
+# 		var partway: float = delta / TIME_TO_ZOOM
+# 		if partway < 1:
+# 			player_zoom += partway * BACKGROUND_ZOOM_INTERVAL * (target_zoom - player_zoom)
+# 		else:
+# 			player_zoom = target_zoom
+# 		scale = Vector2(player_zoom, player_zoom)

@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 const SPEED = 50.0
+const TIME_TO_ZOOM: float = 0.15
+var target_scale: Vector2 = scale
 
 @onready var platforms = $Platforms
 
@@ -23,3 +25,11 @@ func _ready():
 #func scale_platforms(scale):
 #	for platform in platforms.get_children():
 #		platform.apply_scale(scale)
+
+func _process(delta: float) -> void:
+	if scale != target_scale:
+		var partway: float = delta / TIME_TO_ZOOM
+		if partway < 1:
+			scale += (delta / TIME_TO_ZOOM) * (target_scale - scale)
+		else:
+			scale = target_scale
