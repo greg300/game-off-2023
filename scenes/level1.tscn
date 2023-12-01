@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://brwx82e2v0s4r"]
+[gd_scene load_steps=12 format=3 uid="uid://brwx82e2v0s4r"]
 
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_wvo0t"]
 [ext_resource type="Texture2D" uid="uid://b75kqx2lax10u" path="res://assets/rock_center_githubgamejam_2023.png" id="2_0o7bx"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://by1hil5a8x1v5" path="res://scenes/background1.tscn" id="4_ykb70"]
 [ext_resource type="PackedScene" uid="uid://cxhskvrn7re3t" path="res://scenes/player.tscn" id="5_jfw77"]
 [ext_resource type="PackedScene" uid="uid://bk7hcl6l07vif" path="res://scenes/goal.tscn" id="6_08v1m"]
+[ext_resource type="PackedScene" uid="uid://b2pupi3wep4p1" path="res://scenes/world_border.tscn" id="7_fsras"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bpdd4"]
 size = Vector2(320, 16)
@@ -16,12 +17,8 @@ size = Vector2(320, 7.8125)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0kllg"]
 size = Vector2(8, 184)
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_ygdqn"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bo6li"]
 size = Vector2(8, 184)
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_g2iii"]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_wvo0t")
@@ -33,6 +30,7 @@ position = Vector2(160, 176)
 shape = SubResource("RectangleShape2D_bpdd4")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CollisionShape2D"]
+visible = false
 position = Vector2(1.52588e-05, -3.8147e-06)
 scale = Vector2(0.379147, 0.037037)
 texture = ExtResource("2_0o7bx")
@@ -42,6 +40,7 @@ position = Vector2(160, 4.09375)
 shape = SubResource("RectangleShape2D_xu24y")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CollisionShape2D4"]
+visible = false
 texture_repeat = 2
 position = Vector2(-2.38419e-06, -0.093749)
 scale = Vector2(0.379147, 0.0277778)
@@ -54,9 +53,11 @@ position = Vector2(4, 92)
 shape = SubResource("RectangleShape2D_0kllg")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CollisionShape2D2"]
-position = Vector2(0, 3.8147e-06)
-scale = Vector2(8, 184)
-texture = SubResource("CanvasTexture_ygdqn")
+position = Vector2(3.72529e-08, 3.99999)
+scale = Vector2(0.00943396, 0.46875)
+texture = ExtResource("2_0o7bx")
+region_enabled = true
+region_rect = Rect2(0, 144, 848, 512)
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
 visible = false
@@ -64,9 +65,12 @@ position = Vector2(316, 92)
 shape = SubResource("RectangleShape2D_bo6li")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CollisionShape2D3"]
-position = Vector2(1.90735e-06, 3.8147e-06)
-scale = Vector2(8, 184)
-texture = SubResource("CanvasTexture_g2iii")
+position = Vector2(0.160593, 1.75507)
+rotation = 3.14159
+scale = Vector2(0.0103788, 0.478596)
+texture = ExtResource("2_0o7bx")
+region_enabled = true
+region_rect = Rect2(0, 144, 848, 512)
 
 [node name="Foreground" parent="." instance=ExtResource("3_0vai6")]
 
@@ -74,6 +78,8 @@ texture = SubResource("CanvasTexture_g2iii")
 
 [node name="Player" parent="." instance=ExtResource("5_jfw77")]
 position = Vector2(32, 160)
+
+[node name="WorldBorder" parent="." instance=ExtResource("7_fsras")]
 
 [node name="Goal" parent="." instance=ExtResource("6_08v1m")]
 position = Vector2(259, 5)

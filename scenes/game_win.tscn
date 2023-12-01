@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://1jitd6ah5pcj"]
+[gd_scene load_steps=7 format=3 uid="uid://1jitd6ah5pcj"]
 
 [ext_resource type="Script" path="res://scripts/quit_button.gd" id="1_34sjs"]
 [ext_resource type="Script" path="res://scripts/replay_button.gd" id="2_ixva2"]
 [ext_resource type="Texture2D" uid="uid://dqc55gs5d7n7g" path="res://assets/background4b.png" id="3_cougl"]
+[ext_resource type="Texture2D" uid="uid://cbyebljaalya5" path="res://assets/background1.png" id="4_rd8tq"]
+[ext_resource type="Texture2D" uid="uid://brhh70hcst4ob" path="res://assets/background2.png" id="5_ajfq3"]
+[ext_resource type="Texture2D" uid="uid://ckj44hmogm8d8" path="res://assets/background3.png" id="6_1rk63"]
 
 [node name="GameStart" type="Control"]
 layout_mode = 3
@@ -45,3 +48,21 @@ z_index = -6
 position = Vector2(160, 88)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("3_cougl")
+
+[node name="Background1" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(160, 88)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_rd8tq")
+
+[node name="Background2" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(160, 88)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_ajfq3")
+
+[node name="Background3" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(160, 88)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("6_1rk63")

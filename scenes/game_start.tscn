@@ -1,8 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://by6m2ja76qvdc"]
+[gd_scene load_steps=7 format=3 uid="uid://by6m2ja76qvdc"]
 
 [ext_resource type="Script" path="res://scripts/quit_button.gd" id="1_olu7c"]
 [ext_resource type="Script" path="res://scripts/start_button.gd" id="2_koa4c"]
 [ext_resource type="Texture2D" uid="uid://dqc55gs5d7n7g" path="res://assets/background4b.png" id="3_cr5tg"]
+[ext_resource type="Texture2D" uid="uid://cbyebljaalya5" path="res://assets/background1.png" id="4_v1tsg"]
+[ext_resource type="Texture2D" uid="uid://brhh70hcst4ob" path="res://assets/background2.png" id="5_ejfs2"]
+[ext_resource type="Texture2D" uid="uid://ckj44hmogm8d8" path="res://assets/background3.png" id="6_rc8cb"]
 
 [node name="GameStart" type="Control"]
 layout_mode = 3
@@ -53,5 +56,23 @@ offset_top = 160.0
 offset_right = 496.0
 offset_bottom = 212.0
 scale = Vector2(0.3, 0.3)
-text = "Background by szadi art
+text = "Assets by szadi art
 szadiart.itch.io"
+
+[node name="Background1" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(160, 88)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_v1tsg")
+
+[node name="Background2" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(160, 88)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_ejfs2")
+
+[node name="Background3" type="Sprite2D" parent="."]
+z_index = -7
+position = Vector2(160, 88)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("6_rc8cb")

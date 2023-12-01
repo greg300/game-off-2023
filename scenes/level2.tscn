@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://obdcnxcjuipr"]
+[gd_scene load_steps=14 format=3 uid="uid://obdcnxcjuipr"]
 
 [ext_resource type="Script" path="res://scripts/level.gd" id="1_ambal"]
 [ext_resource type="PackedScene" uid="uid://cllu8y3w44ill" path="res://scenes/background2.tscn" id="2_5i1ca"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dkr5ishp5ima7" path="res://scenes/foreground2.tscn" id="3_akfyh"]
 [ext_resource type="PackedScene" uid="uid://cxhskvrn7re3t" path="res://scenes/player.tscn" id="5_5spp5"]
 [ext_resource type="PackedScene" uid="uid://bk7hcl6l07vif" path="res://scenes/goal.tscn" id="6_0feam"]
+[ext_resource type="PackedScene" uid="uid://b2pupi3wep4p1" path="res://scenes/world_border.tscn" id="6_wfbvu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bpdd4"]
 size = Vector2(320, 16)
@@ -37,6 +38,7 @@ position = Vector2(160, 176)
 shape = SubResource("RectangleShape2D_bpdd4")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CollisionShape2D"]
+visible = false
 position = Vector2(1.52588e-05, -3.8147e-06)
 scale = Vector2(0.379147, 0.037037)
 texture = ExtResource("2_owucm")
@@ -46,6 +48,7 @@ position = Vector2(160, 4.09375)
 shape = SubResource("RectangleShape2D_xu24y")
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D/CollisionShape2D4"]
+visible = false
 texture_repeat = 2
 position = Vector2(-2.38419e-06, -0.093749)
 scale = Vector2(0.379147, 0.0277778)
@@ -74,6 +77,8 @@ texture = SubResource("CanvasTexture_g2iii")
 
 [node name="Player" parent="." instance=ExtResource("5_5spp5")]
 position = Vector2(272, 160)
+
+[node name="WorldBorder" parent="." instance=ExtResource("6_wfbvu")]
 
 [node name="Goal" parent="." instance=ExtResource("6_0feam")]
 position = Vector2(295, 3)

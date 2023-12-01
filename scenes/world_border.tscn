@@ -1,0 +1,204 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2pupi3wep4p1"]
+
+[ext_resource type="Texture2D" uid="uid://dsmykijiki8cp" path="res://assets/props1.png" id="1_3rcc6"]
+[ext_resource type="Texture2D" uid="uid://f7jm8kol0qe5" path="res://assets/props2.png" id="2_1jkcx"]
+
+[node name="WorldBorder" type="Node2D"]
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(246.659, 166.75)
+scale = Vector2(0.380682, 0.380682)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(912, 72, 120, 88)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(192.875, 172.25)
+scale = Vector2(0.570312, 0.570312)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(912, 384, 160, 64)
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(67, 168)
+scale = Vector2(0.366477, 0.366477)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(792, 360, 104, 88)
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(291.807, 160.193)
+scale = Vector2(0.363794, 0.363794)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(16, 16, 144, 144)
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(272, 168)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(360, 360, 56, 88)
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(318, 160)
+scale = Vector2(0.473214, 0.460227)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(360, 360, 56, 88)
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(26, 172)
+scale = Vector2(0.243055, 0.243055)
+texture = ExtResource("2_1jkcx")
+region_enabled = true
+region_rect = Rect2(24, 864, 352, 144)
+
+[node name="Sprite2D8" type="Sprite2D" parent="."]
+position = Vector2(-2.99998, 171)
+scale = Vector2(0.384627, 0.377683)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(16, 16, 144, 144)
+
+[node name="Sprite2D9" type="Sprite2D" parent="."]
+position = Vector2(106, 168)
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(608, 384, 176, 64)
+
+[node name="Sprite2D10" type="Sprite2D" parent="."]
+position = Vector2(268.46, 9.41581)
+rotation = 3.14159
+scale = Vector2(0.419244, 0.419244)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(912, 384, 160, 64)
+
+[node name="Sprite2D11" type="Sprite2D" parent="."]
+position = Vector2(311, 23)
+rotation = 3.14159
+scale = Vector2(0.353368, 0.353368)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(16, 16, 144, 144)
+
+[node name="Sprite2D12" type="Sprite2D" parent="."]
+position = Vector2(8, 15)
+rotation = 3.14159
+scale = Vector2(0.277989, 0.277989)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(16, 16, 144, 144)
+
+[node name="Sprite2D13" type="Sprite2D" parent="."]
+position = Vector2(176, 8)
+rotation = 3.14159
+scale = Vector2(0.375, 0.375)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(608, 384, 176, 64)
+
+[node name="Sprite2D14" type="Sprite2D" parent="."]
+position = Vector2(119.741, 9.94347)
+rotation = 3.14159
+scale = Vector2(0.237352, 0.237352)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(912, 72, 120, 88)
+
+[node name="Sprite2D15" type="Sprite2D" parent="."]
+position = Vector2(96, 14)
+rotation = 3.14159
+scale = Vector2(0.366477, 0.366477)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(792, 360, 104, 88)
+
+[node name="Sprite2D16" type="Sprite2D" parent="."]
+position = Vector2(136, 6)
+rotation = 3.14159
+scale = Vector2(0.234894, 0.234894)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(912, 384, 160, 64)
+
+[node name="Sprite2D18" type="Sprite2D" parent="."]
+position = Vector2(24, 8)
+rotation = 3.14159
+scale = Vector2(0.237352, 0.237352)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(912, 72, 120, 88)
+
+[node name="Sprite2D19" type="Sprite2D" parent="."]
+position = Vector2(211, 8)
+rotation = 3.14159
+scale = Vector2(0.223466, 0.223466)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(792, 360, 104, 88)
+
+[node name="Sprite2D20" type="Sprite2D" parent="."]
+position = Vector2(51, 12)
+rotation = 3.14159
+scale = Vector2(0.306176, 0.306176)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(432, 336, 96, 112)
+
+[node name="Sprite2D21" type="Sprite2D" parent="."]
+position = Vector2(322, 170)
+scale = Vector2(0.163194, 0.163194)
+texture = ExtResource("2_1jkcx")
+region_enabled = true
+region_rect = Rect2(24, 864, 352, 144)
+
+[node name="Sprite2D22" type="Sprite2D" parent="."]
+position = Vector2(316, 11)
+rotation = 3.14159
+scale = Vector2(0.192778, 0.192778)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(16, 16, 144, 144)
+
+[node name="Sprite2D23" type="Sprite2D" parent="."]
+position = Vector2(145, 172)
+scale = Vector2(0.347656, 0.347656)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(912, 384, 160, 64)
+
+[node name="Sprite2D17" type="Sprite2D" parent="."]
+z_index = 2
+position = Vector2(72, 8)
+rotation = -3.14159
+scale = Vector2(0.192778, 0.192778)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(16, 16, 144, 144)
+
+[node name="Sprite2D24" type="Sprite2D" parent="."]
+position = Vector2(235.11, 6.49447)
+rotation = 3.14159
+scale = Vector2(0.303718, 0.303718)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(608, 384, 176, 64)
+
+[node name="Sprite2D25" type="Sprite2D" parent="."]
+position = Vector2(38, 6)
+rotation = 3.14159
+scale = Vector2(0.14797, 0.14797)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(912, 72, 120, 88)
+
+[node name="Sprite2D26" type="Sprite2D" parent="."]
+position = Vector2(71, 5)
+rotation = 3.14159
+scale = Vector2(0.19065, 0.19065)
+texture = ExtResource("1_3rcc6")
+region_enabled = true
+region_rect = Rect2(912, 384, 160, 64)

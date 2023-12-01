@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dmrtcepqipwx0"]
 
 [ext_resource type="Script" path="res://scripts/foreground.gd" id="1_b7kp0"]
-[ext_resource type="PackedScene" uid="uid://ckexk7prtiqgy" path="res://scenes/platform_fg.tscn" id="3_vyja2"]
+[ext_resource type="PackedScene" uid="uid://ckexk7prtiqgy" path="res://scenes/platform.tscn" id="3_vyja2"]
 
 [node name="Foreground" type="Node2D"]
 script = ExtResource("1_b7kp0")
