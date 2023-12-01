@@ -20,6 +20,18 @@
         "test",
         "review"
       ]
+    },
+    {
+      "login": "ron-wolf",
+      "name": "Ron Wolf",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7342888?v=4",
+      "profile": "https://www.linkedin.com/in/nor-flow",
+      "contributions": [
+        "code",
+        "ideas",
+        "test",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
