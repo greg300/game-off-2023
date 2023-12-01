@@ -41,7 +41,7 @@ func _physics_process(_delta):
 #	background.move_and_slide()
 	
 func scale_platforms(new_scale):
-	background.scale = new_scale
+	background.target_scale = new_scale
 #	for platform in background.platforms.get_children():
 #		platform.apply_scale(scale)
 		
