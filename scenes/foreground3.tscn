@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyl5vehuocf24"]
+
+[ext_resource type="Script" path="res://scripts/foreground.gd" id="1_brnoo"]
+[ext_resource type="PackedScene" uid="uid://ckexk7prtiqgy" path="res://scenes/platform.tscn" id="2_n1qxs"]
+
+[node name="Foreground" type="Node2D"]
+script = ExtResource("1_brnoo")
+
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="Platform" parent="Platforms" instance=ExtResource("2_n1qxs")]
+position = Vector2(160, 72)
+
+[node name="Platform2" parent="Platforms" instance=ExtResource("2_n1qxs")]
+position = Vector2(208, 136)

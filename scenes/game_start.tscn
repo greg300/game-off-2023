@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://by6m2ja76qvdc"]
+
+[ext_resource type="Script" path="res://scripts/quit_button.gd" id="1_olu7c"]
+[ext_resource type="Script" path="res://scripts/start_button.gd" id="2_koa4c"]
+[ext_resource type="Texture2D" uid="uid://dqc55gs5d7n7g" path="res://assets/background4b.png" id="3_cr5tg"]
+
+[node name="GameStart" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 144.0
+offset_right = 213.0
+offset_bottom = 175.0
+scale = Vector2(0.75, 0.75)
+text = "Quit"
+script = ExtResource("1_olu7c")
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 112.0
+offset_right = 213.0
+offset_bottom = 143.0
+scale = Vector2(0.75, 0.75)
+text = "Start
+"
+script = ExtResource("2_koa4c")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 16.0
+offset_right = 240.0
+offset_bottom = 96.0
+
+[node name="Background4b" type="Sprite2D" parent="."]
+z_index = -6
+position = Vector2(160, 88)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_cr5tg")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 256.0
+offset_top = 160.0
+offset_right = 496.0
+offset_bottom = 212.0
+scale = Vector2(0.3, 0.3)
+text = "Background by szadi art
+szadiart.itch.io"
