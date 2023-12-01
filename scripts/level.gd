@@ -18,6 +18,9 @@ func _physics_process(_delta):
 #	var input_direction = Input.get_vector("bg_left", "bg_right", "bg_up", "bg_down")
 #
 #	background.velocity = input_direction * BACKGROUND_SPEED
+
+	if Input.is_action_just_pressed("reset_level"):
+		reset_level()
 	
 	if Input.is_action_just_pressed("bg_scale_down"):
 		if background_zoom > BACKGROUND_ZOOM_MIN:
@@ -57,6 +60,9 @@ func scale_player(direction):
 			player.player_zoom = new_player_zoom
 
 			break
+
+func reset_level():
+	get_tree().change_scene_to_file(goal.LEVELS[GlobalData.current_level])
 
 func transition_level():
 	var next_level = GlobalData.current_level + 1

@@ -28,3 +28,13 @@ scale = Vector2(0.5, 0.5)
 text = "Tip: try scaling the background while standing in it!"
 scroll_active = false
 shortcut_keys_enabled = false
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = -133.0
+offset_top = 3.0
+offset_right = 1.0
+offset_bottom = 51.0
+scale = Vector2(0.4, 0.4)
+text = "Press 'r' to restart the level."
+scroll_active = false
+shortcut_keys_enabled = false

@@ -14,3 +14,14 @@ z_index = -2
 position = Vector2(-4.00543e-05, -16)
 scale = Vector2(0.866667, 0.866667)
 texture = ExtResource("3_8cs6e")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -144.0
+offset_top = 16.0
+offset_right = 56.0
+offset_bottom = 64.0
+scale = Vector2(0.5, 0.5)
+text = "Press 'a' and 'd' to move,
+'space' to jump!"
+scroll_active = false
+shortcut_keys_enabled = false
