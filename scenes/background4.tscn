@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpu4odw4ih2dv"]
+
+[ext_resource type="Script" path="res://scripts/background.gd" id="1_mxnf0"]
+[ext_resource type="PackedScene" uid="uid://ckexk7prtiqgy" path="res://scenes/platform.tscn" id="2_qpje3"]
+[ext_resource type="Texture2D" uid="uid://dqc55gs5d7n7g" path="res://assets/background4b.png" id="3_owx2q"]
+
+[node name="Background" type="CharacterBody2D"]
+position = Vector2(160, 96)
+script = ExtResource("1_mxnf0")
+
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="Platform" parent="Platforms" instance=ExtResource("2_qpje3")]
+position = Vector2(48, 32)
+scale = Vector2(0.5, 0.5)
+
+[node name="BackgroundSprite" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(-4.00543e-05, -16)
+scale = Vector2(0.866667, 0.866667)
+texture = ExtResource("3_owx2q")

@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqi07wxkun02p"]
+
+[ext_resource type="Script" path="res://scripts/foreground.gd" id="1_btt5r"]
+[ext_resource type="PackedScene" uid="uid://ckexk7prtiqgy" path="res://scenes/platform.tscn" id="2_f83c3"]
+
+[node name="Foreground" type="Node2D"]
+script = ExtResource("1_btt5r")
+
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="Platform" parent="Platforms" instance=ExtResource("2_f83c3")]
+position = Vector2(184, 64)
+
+[node name="Platform2" parent="Platforms" instance=ExtResource("2_f83c3")]
+position = Vector2(262, 112)
+
+[node name="Platform3" parent="Platforms" instance=ExtResource("2_f83c3")]
+position = Vector2(248, 74)
+rotation = -1.5708
+
+[node name="Platform4" parent="Platforms" instance=ExtResource("2_f83c3")]
+position = Vector2(275, 104)
+rotation = -2.21133
+
+[node name="Platform5" parent="Platforms" instance=ExtResource("2_f83c3")]
+position = Vector2(200, 147)
