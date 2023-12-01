@@ -1,0 +1,31 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "greg300",
+      "name": "Gregory Giovannini",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36485898?v=4",
+      "profile": "https://github.com/greg300",
+      "contributions": [
+        "code",
+        "projectManagement",
+        "design",
+        "ideas",
+        "test",
+        "review"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "game-off-2023",
+  "projectOwner": "greg300"
+}
