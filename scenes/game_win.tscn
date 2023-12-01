@@ -66,3 +66,13 @@ z_index = -7
 position = Vector2(160, 88)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("6_1rk63")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 64.0
+offset_top = 16.0
+offset_right = 304.0
+offset_bottom = 68.0
+scale = Vector2(0.8, 0.8)
+text = "End of Demo
+Thank you for playing!"
+horizontal_alignment = 1

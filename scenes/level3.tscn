@@ -28,7 +28,6 @@ size = Vector2(8, 184)
 script = ExtResource("1_k8njp")
 
 [node name="Background" parent="." instance=ExtResource("3_o6oti")]
-position = Vector2(160, 96)
 
 [node name="Foreground" parent="." instance=ExtResource("2_6r4i6")]
 
