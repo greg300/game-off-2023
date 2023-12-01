@@ -8,13 +8,15 @@ const JUMP_ZOOM_EFFECT = 100.0
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var player_zoom = 1.0
+var facing_direction: int = 0
 
 
 func _physics_process(delta):
 	apply_gravity(delta)
 	handle_jump()
 
-	var input_axis = Input.get_axis("player_left", "player_right")
+	var input_axis: float = Input.get_axis("player_left", "player_right")
+	face_direction(input_axis)
 	handle_acceleration(input_axis, delta)
 	apply_friction(input_axis, delta)
 	
@@ -45,3 +47,21 @@ func apply_friction(input_axis, delta):
 	# Handle deceleration.
 	if not input_axis:
 		velocity.x = move_toward(velocity.x, 0, FRICTION * delta)
+
+func face_direction(last_accel: float) -> void:
+	var facing_left: bool
+	if velocity.x < 0:
+		facing_left = true
+	elif velocity.x > 0:
+		facing_left = false
+	elif last_accel < 0:
+		facing_left = true
+	elif last_accel > 0:
+		facing_left = false
+	elif facing_direction < 0:
+		facing_left = true
+	else:
+		facing_left = false
+	
+	facing_direction = int(facing_left) * -2 + 1
+	$Sprite2D.flip_h = facing_left
