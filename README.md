@@ -1,8 +1,8 @@
-# game-off-2023
+# Between Perspectives - Game Off 2023
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-GitHub's Game Off 2023.
+Submission for GitHub's Game Off 2023.
 
 
 ## Contributors ✨
