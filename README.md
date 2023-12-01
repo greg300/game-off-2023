@@ -2,7 +2,12 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-Submission for GitHub's Game Off 2023.
+
+_Between Perspectives_ is a game made using the [Godot game engine](https://godotengine.org/) (version 4.1) for the [GitHub Game Off](https://itch.io/jam/game-off-2023), a month-long [game jam](https://en.wikipedia.org/wiki/Game_jam) that took place throughout the month of November 2023.  The theme of 2023's Game Off was "scale".
+
+In the game, you play as an unnamed ghost.  Your goal is to ascend ("scale") to the top of each level in order to reach the next one.  However, you'll soon realize that the exit can't always be found… that is, not until you change your perspective (zoom, or "scale").
+
+The game was made as a collaboration between Greg Giovannini (@greg300), Luna Laliberte (@LuniPatuni), and Ron Wolf (@ron-wolf).  Credit also goes to [Szadi Art](https://szadiart.itch.io/) for many of the art assets, without which our project—as well as the process of creating it—would have been much bleaker.  And not in the fun, _ghastly_ way :ghost:
 
 
 ## Contributors ✨
